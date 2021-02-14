@@ -2,13 +2,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
-
 //include bootstrap npm library into the bundle
 import "bootstrap";
-
 //include your index.scss file into the bundle
 import "../styles/index.scss";
-
 //import your own components
 //import { Home } from "./component/home.js";
 //dany 02-04-2020
@@ -39,7 +36,7 @@ setInterval(function() {
 	const three = Math.floor(counter / 1000);
 	const two = Math.floor(counter / 100);
 	const one = Math.floor(counter / 10);
-	console.log(one, two, three, four);
+	//console.log(one, two, three, four);
 	counter++;
 	//render your react application
 	ReactDOM.render(
@@ -51,5 +48,5 @@ setInterval(function() {
 		/>,
 		document.querySelector("#app")
 	); //diq 02.04.2020
-}, 1000);
+}, 300);
 //dany 02-04-2020
